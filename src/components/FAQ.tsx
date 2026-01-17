@@ -9,11 +9,11 @@ import { HelpCircle } from "lucide-react";
 const faqItems = [
   {
     question: "Is this invoice generator really free?",
-    answer: "Yes! Our invoice generator online is 100% free with no hidden costs, premium tiers, or subscription fees. Create unlimited professional invoices without ever paying a cent.",
+    answer: "Yes! Our tool is 100% free with no hidden costs, premium tiers, or subscription fees. Create unlimited professional invoices without ever paying a cent.",
   },
   {
     question: "Do I need to create an account?",
-    answer: "No. Our free invoice generator requires zero signup—just visit and start creating invoices immediately. No email required, no registration process, no passwords to remember.",
+    answer: "No. You can start creating invoices immediately—no email required, no registration process, no passwords to remember.",
   },
   {
     question: "Is my invoice data safe?",
@@ -21,7 +21,7 @@ const faqItems = [
   },
   {
     question: "Can I use this on my phone?",
-    answer: "Yes! Our invoice generator free tool is fully responsive and works seamlessly on mobile devices, tablets, and desktops. Create professional invoices anytime, anywhere.",
+    answer: "Yes! Our tool is fully responsive and works seamlessly on mobile devices, tablets, and desktops. Create professional invoices anytime, anywhere.",
   },
   {
     question: "What format is the invoice downloaded in?",
@@ -29,7 +29,7 @@ const faqItems = [
   },
   {
     question: "Can I customize the invoice with my business details?",
-    answer: "Yes! You can add your business name, logo placeholder, tagline, contact information, bank details, and customize all invoice fields to match your branding.",
+    answer: "Yes! You can add your business name, logo, tagline, contact information, bank details, and customize all invoice fields to match your branding.",
   },
 ];
 
@@ -43,10 +43,10 @@ const FAQ = () => {
             <span>Got Questions?</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Frequently Asked Questions About Our Free Invoice Generator
+            Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Everything you need to know about our <strong>invoice generator online</strong> tool.
+            Everything you need to know about creating invoices with our tool.
           </p>
         </div>
 

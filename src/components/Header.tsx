@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FileText, Menu, X, Home, Shield, FileCheck, Users, Mail } from "lucide-react";
+import { FileText, Menu, X, Home, Shield, FileCheck, Users, Mail, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -19,6 +19,7 @@ const Header = ({ onScrollToTool }: HeaderProps) => {
 
   const menuItems = [
     { name: "Home", href: "/", icon: Home },
+    { name: "Blog", href: "/blog", icon: BookOpen },
     { name: "About Us", href: "/about-us", icon: Users },
     { name: "Privacy Policy", href: "/privacy-policy", icon: Shield },
     { name: "Terms of Use", href: "/terms-of-use", icon: FileCheck },
@@ -30,11 +31,11 @@ const Header = ({ onScrollToTool }: HeaderProps) => {
         <Link to="/" className="flex items-center gap-2">
           <img 
             src="https://i.ibb.co/hxGQ7kbk/Picsart-26-01-15-10-47-02-140.png" 
-            alt="Invoice Generator Online Logo" 
+            alt="InvoiceCreate.online Logo" 
             className="w-10 h-10 rounded-xl object-contain"
           />
           <span className="font-bold text-lg text-foreground">
-            Invoice Generator<span className="text-primary">.online</span>
+            InvoiceCreate<span className="text-primary">.online</span>
           </span>
         </Link>
 
@@ -80,11 +81,11 @@ const Header = ({ onScrollToTool }: HeaderProps) => {
                 <SheetTitle className="flex items-center gap-2">
                   <img 
                     src="https://i.ibb.co/hxGQ7kbk/Picsart-26-01-15-10-47-02-140.png" 
-                    alt="Invoice Generator Online Logo" 
+                    alt="InvoiceCreate.online Logo" 
                     className="w-8 h-8 rounded-lg object-contain"
                   />
                   <span className="font-bold">
-                    Invoice Generator<span className="text-primary">.online</span>
+                    InvoiceCreate<span className="text-primary">.online</span>
                   </span>
                 </SheetTitle>
               </SheetHeader>
@@ -108,7 +109,7 @@ const Header = ({ onScrollToTool }: HeaderProps) => {
 
               <div className="mt-6 pt-6 border-t">
                 <p className="text-xs text-muted-foreground text-center">
-                  © 2026 InvoiceGenerator.online
+                  © 2026 InvoiceCreate.online
                   <br />
                   Free Invoice Generator Online
                 </p>

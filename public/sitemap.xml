@@ -5,38 +5,38 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- Homepage - Invoice Generator Online -->
+  <!-- Homepage - Invoice Create Online -->
   <url>
-    <loc>https://invoicegenerator.online/</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://invoicecreate.online/</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://i.ibb.co/hxGQ7kbk/Picsart-26-01-15-10-47-02-140.png</image:loc>
-      <image:title>Invoice Generator Online Logo</image:title>
+      <image:title>InvoiceCreate.online Logo</image:title>
     </image:image>
   </url>
   
   <!-- About Us Page -->
   <url>
-    <loc>https://invoicegenerator.online/about-us</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://invoicecreate.online/about-us</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Privacy Policy -->
   <url>
-    <loc>https://invoicegenerator.online/privacy-policy</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://invoicecreate.online/privacy-policy</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <!-- Terms of Use -->
   <url>
-    <loc>https://invoicegenerator.online/terms-of-use</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://invoicecreate.online/terms-of-use</loc>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

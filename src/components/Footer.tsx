@@ -8,7 +8,7 @@ const Footer = () => {
         {/* SEO Footer Text */}
         <div className="text-center mb-10 max-w-3xl mx-auto">
           <p className="text-muted-foreground text-sm leading-relaxed">
-            <strong>InvoiceGenerator.online</strong> is a professional <strong>free invoice generator online</strong> for freelancers and small businesses. Create invoices online, download PDF instantly, and manage billing without signup or cost.
+            <strong>InvoiceCreate.online</strong> is a professional <strong>free invoice generator online</strong> for freelancers and small businesses. Create invoices online, download PDF instantly, and manage billing without signup or cost.
           </p>
         </div>
 
@@ -18,11 +18,11 @@ const Footer = () => {
             <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
               <img 
                 src="https://i.ibb.co/hxGQ7kbk/Picsart-26-01-15-10-47-02-140.png" 
-                alt="Invoice Generator Online Logo" 
+                alt="InvoiceCreate.online Logo" 
                 className="w-6 h-6 rounded object-contain"
               />
               <h3 className="text-xl font-bold text-foreground">
-                InvoiceGenerator.online
+                InvoiceCreate.online
               </h3>
             </div>
             <p className="text-muted-foreground text-sm">
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Copyright with SEO Keywords */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} InvoiceGenerator.online. All rights reserved.
+            © {new Date().getFullYear()} InvoiceCreate.online. All rights reserved.
           </p>
           <p className="text-muted-foreground text-xs mt-2">
             <strong>Free invoice generator online</strong> - No signup required | Create professional invoice PDFs instantly

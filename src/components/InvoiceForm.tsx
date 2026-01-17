@@ -86,6 +86,28 @@ const INDIA_BANKS = [
   { name: "GPay", bankName: "Google Pay (Various Banks)" },
 ];
 
+const USA_BANKS = [
+  { name: "Chase", bankName: "JPMorgan Chase Bank" },
+  { name: "Bank of America", bankName: "Bank of America" },
+  { name: "Wells Fargo", bankName: "Wells Fargo Bank" },
+  { name: "Citibank", bankName: "Citibank" },
+  { name: "US Bank", bankName: "U.S. Bank" },
+  { name: "PNC", bankName: "PNC Bank" },
+  { name: "Capital One", bankName: "Capital One" },
+  { name: "TD Bank", bankName: "TD Bank" },
+  { name: "Truist", bankName: "Truist Bank" },
+  { name: "Goldman Sachs", bankName: "Goldman Sachs Bank" },
+  { name: "PayPal", bankName: "PayPal" },
+  { name: "Venmo", bankName: "Venmo (PayPal)" },
+  { name: "Zelle", bankName: "Zelle (Various Banks)" },
+];
+
+const ALL_BANKS = [
+  { country: "🇵🇰 Pakistan", banks: PAKISTAN_BANKS },
+  { country: "🇮🇳 India", banks: INDIA_BANKS },
+  { country: "🇺🇸 USA", banks: USA_BANKS },
+];
+
 const LOGO_DEV_API_KEY = "pk_U5aNfekTSY6yrDLFn1ynbw";
 
 const STORAGE_KEY = "freeinvoicegen_data";
@@ -754,41 +776,40 @@ const InvoiceForm = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {/* Quick Fill Buttons - Pakistan */}
+                {/* Bank Selection Dropdown */}
                 <div>
-                  <Label className="text-sm text-muted-foreground mb-2 block">🇵🇰 Pakistani Banks & Payment Methods</Label>
-                  <div className="flex flex-wrap gap-2">
-                    {PAKISTAN_BANKS.map((preset) => (
-                      <Button
-                        key={preset.name}
-                        type="button"
-                        variant="outline"
-                        size="sm"
-                        onClick={() => applyBankPreset(preset)}
-                        className="text-xs"
-                      >
-                        {preset.name}
-                      </Button>
-                    ))}
-                  </div>
-                </div>
-                {/* Quick Fill Buttons - India */}
-                <div>
-                  <Label className="text-sm text-muted-foreground mb-2 block">🇮🇳 Indian Banks & Payment Methods</Label>
-                  <div className="flex flex-wrap gap-2">
-                    {INDIA_BANKS.map((preset) => (
-                      <Button
-                        key={preset.name}
-                        type="button"
-                        variant="outline"
-                        size="sm"
-                        onClick={() => applyBankPreset(preset)}
-                        className="text-xs"
-                      >
-                        {preset.name}
-                      </Button>
-                    ))}
-                  </div>
+                  <Label className="flex items-center gap-2 mb-2">
+                    <Landmark className="w-4 h-4 text-muted-foreground" />
+                    Select Bank (Quick Fill)
+                  </Label>
+                  <Select
+                    value=""
+                    onValueChange={(value) => {
+                      setInvoiceData({ ...invoiceData, bankName: value });
+                      toast({
+                        title: "Bank Selected",
+                        description: "Bank name has been filled. Add your account number.",
+                      });
+                    }}
+                  >
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="Select a bank from Pakistan, India, or USA" />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-[300px]">
+                      {ALL_BANKS.map((group) => (
+                        <div key={group.country}>
+                          <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground bg-muted/50">
+                            {group.country}
+                          </div>
+                          {group.banks.map((bank) => (
+                            <SelectItem key={bank.name} value={bank.bankName}>
+                              {bank.bankName}
+                            </SelectItem>
+                          ))}
+                        </div>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>

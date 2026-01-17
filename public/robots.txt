@@ -1,4 +1,4 @@
-# InvoiceGenerator.online Robots.txt
+# InvoiceCreate.online Robots.txt
 # Free Invoice Generator Online - No Signup Required
 
 User-agent: Googlebot
@@ -31,7 +31,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://invoicegenerator.online/sitemap.xml
+Sitemap: https://invoicecreate.online/sitemap.xml
 
 # Host directive
-Host: https://invoicegenerator.online
+Host: https://invoicecreate.online
