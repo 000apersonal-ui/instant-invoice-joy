@@ -77,7 +77,7 @@ const HeroSection = ({ onScrollToTool }: HeroSectionProps) => {
               Invoicing Tips & Guides
             </Link>
             <span className="text-muted-foreground">|</span>
-            <Link to="/about" className="text-primary hover:underline font-medium">
+            <Link to="/about-us" className="text-primary hover:underline font-medium">
               About Us
             </Link>
             <span className="text-muted-foreground">|</span>

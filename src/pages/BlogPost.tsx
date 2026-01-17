@@ -38,7 +38,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header onScrollToTool={scrollToTop} />
+      <Header />
       
       {/* Blog Post Header */}
       <article className="py-8 md:py-16">

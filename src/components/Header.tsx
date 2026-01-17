@@ -10,11 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-interface HeaderProps {
-  onScrollToTool: () => void;
-}
-
-const Header = ({ onScrollToTool }: HeaderProps) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
@@ -50,25 +46,10 @@ const Header = ({ onScrollToTool }: HeaderProps) => {
               {item.name}
             </Link>
           ))}
-          <Button
-            onClick={onScrollToTool}
-            size="sm"
-            className="rounded-full shadow-sm"
-          >
-            Create Invoice ✨
-          </Button>
         </nav>
 
         {/* Mobile Menu */}
-        <div className="md:hidden flex items-center gap-2">
-          <Button
-            onClick={onScrollToTool}
-            size="sm"
-            className="rounded-full shadow-sm"
-          >
-            Create Invoice
-          </Button>
-          
+        <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="h-10 w-10">

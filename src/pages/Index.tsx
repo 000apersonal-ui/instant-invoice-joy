@@ -16,7 +16,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header onScrollToTool={scrollToTool} />
+      <Header />
       <HeroSection onScrollToTool={scrollToTool} />
       <div ref={toolRef}>
         <InvoiceForm />

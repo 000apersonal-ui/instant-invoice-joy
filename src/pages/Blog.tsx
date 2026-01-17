@@ -74,7 +74,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header onScrollToTool={scrollToTop} />
+      <Header />
       
       {/* Blog Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background">
